@@ -22,12 +22,14 @@ window.addEventListener("click", function (event) {
       counter.innerText = --counter.innerText;
     } else if (
       // Проверка на товар,который находиться в корзине
-
       event.target.closest(".cart-wrapper") &&
       parseInt(counter.innerText) === 1
     ) {
       // Удаляем товар с корзины
       event.target.closest(".cart-item").remove();
+
+      // Отображение статуса корзины Пустая / Полная
+      toggleCartStatus();
     }
   }
 });

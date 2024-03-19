@@ -65,5 +65,8 @@ window.addEventListener("click", function (event) {
 
     // Сброс счетчика на единицу
     card.querySelector("[data-counter]").innerText = "1";
+
+    // Отображение статуса корзины Пустая / Полная
+    toggleCartStatus();
   }
 });
