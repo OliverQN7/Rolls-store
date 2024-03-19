@@ -62,5 +62,8 @@ window.addEventListener("click", function (event) {
       // Отображение в корзине
       cartWrapper.insertAdjacentHTML("beforeend", cartItemHTML);
     }
+
+    // Сброс счетчика на единицу
+    card.querySelector("[data-counter]").innerText = "1";
   }
 });
